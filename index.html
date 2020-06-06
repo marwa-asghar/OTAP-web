@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid mainBar">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-12 ">
+               <a class="nav-item" href="index.html">HOME</a>
+                <a class="nav-item" href="#project">OUR PROJECT</a>
+                 <a class="nav-item " href="#vision">OUR VISION</a>
+                <a class="nav-item" href="#sign in">LOGIN</a>
+               <a class="nav-item" href="#contact">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid top_cover">
+        <div class="row">
+            <!-- <div class="col-md-12 col-sm-12 col-lg-12 col-12 top_back_cover" ></div> -->
+            <div class="col-md-5 col-sm-12 top_front_cover"><h1>Over the Air programming with GSM</h1></div>
+
+        </div>
+    </div>
+    <div class="container-fliud project ">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-12" id="project">
+            <h1>OUR PROJECT</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam at, <br>
+        dignissimos labore voluptatem nisi dicta. Consequuntur, dolore. Cupiditate,<br>
+        laborum facere est consequatur, voluptatibus ipsa quis minus labore vero ex ea? <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+     Assumenda rem nisi sequi quod eum, consectetur beatae facilis quo <br>
+      iure qui a praesentium architecto libero laborum, voluptatum velit pariatur! Optio, autem!</p>
+      <br>
+      <br>
+      <p id="left"><a href="#">Back to top</a></p>
+        </div>
+    </div>
+    </div>
+    <section>
+    <div class="container-fluid vision">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-12" id="vision">
+                <h1>OUR VISION</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam at, <br>
+            dignissimos labore voluptatem nisi dicta. Consequuntur, dolore. Cupiditate,<br>
+            laborum facere est consequatur, voluptatibus ipsa quis minus labore vero ex ea? <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+         Assumenda rem nisi sequi quod eum, consectetur beatae facilis quo <br>
+          iure qui a praesentium architecto libero laborum, voluptatum velit pariatur! Optio, autem!</p><br><br>
+          <p id="left"><a href="#">Back to top</a></p> </div>
+        </div>
+        </div>
+    </section>
+    <div class="container-fluid sign-in">
+        <div class="row">
+            <div class=" col-sm-2col-lg-4 col-md-4 col-1"></div>
+            <div class="col-sm-8 col-md-4 col-lg-3 col-10 login" id="sign in">
+                <form action="#">
+                    <label id="username">Username:</label>
+                    <input required type="text" value="" placeholder="Enter username" name="userid" id="user"><br><br>
+                    <label id="pass">password</label>
+                    <input type="password"  value="" required id="password" name="pwd" placeholder="Enter password"><br>
+                    <input id="button" type='submit' onclick='check(this.form)' value='Login'><br>
+                </form> 
+            </div>
+            <div class="col-sm-2 col-lg-4 col-md-4 col-1"></div>
+        </div>
+    </div>
+    <script>
+        function check(form)
+        {
+        if(form.userid.value=='admin' && form.pwd.value=='admin')
+       {
+        window.open('serverIndex.html')
+        }
+        else
+        {
+         alert('Error Password or Username')/*displays error message*/
+       }
+        }
+    </script>;
+    <div class="container-fluid " id="contact">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 contact" >
+                <h1>CONTACT US</h1>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                <!-- <table class="col-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+                    <tr>
+                <td><p id="tag">FIND US ON FACEBOOK</p></td>
+              <td>  <a  id="link" href="www.facebook.com">www.facebook.com/OTAP</a></td>
+            </tr><br>
+            <tr>
+               <td> <p id="tag">FIND US ON LINKDin</p></td>
+              <td>  <a id="link" href="www.linkdin.com">www.linkdin.com/OTAP</a></td>
+            </tr><br>
+            <tr>
+               <td> <p id="tag">EMAIL US</p></td>
+               <td> <a id="link" href="www.gmail.com">OTAP@gmail.com</a></td>
+            </tr><br>
+            <tr>
+               <td> <p id="tag">Find OUR LOCATION</p></td>
+            </tr><br>
+            </table> -->
+            <ul class=" col-12 col-sm-12 col-md-12 col-lg-12 contact-info">
+                <li><p>Find us on Facebook:</p><a href="http://www.facebook.com">http://www.facebook.com/otap</a></li><br>
+                <li><p>Find us on linkdin:</p><a href="http://www.linkdin.com">http://www.linkdin.com/otap</a></li><br>
+                <li><p>Email us:</p><a href="mailto:hiraasghar235@gmail.com">OTAp@gmail.com</a></li><br>
+                <li><p>Find Our location:</p> <a href="location.html">click here</a></li><br><br>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid TOP">
+        <div class="row">
+            <div class="col-sm-12 col-12 col-lg-12 col-md-12"><a href="#" id="top" >BACK TO TOP</a></div>
+        </div>
+    </div>
+</body>
+</html>

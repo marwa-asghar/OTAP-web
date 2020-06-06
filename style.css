@@ -1,0 +1,189 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mainBar{
+    height:70px;
+    box-shadow: 5px 5px 5px grey;
+    background-color:#0F2061;
+    padding-top: 15px;
+    /* padding-left: 170px; */
+    margin-top: 5px;
+    background-blend-mode: exclusion;
+    text-align: right;
+}
+.nav-item{
+    font-size: 14px;
+    padding-inline-end: 15px;
+    text-decoration:none ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+    color: white
+    !important;
+}
+
+.top_cover{
+    width: 100%;
+    height: 600px;
+    background-image: url("pics/pic1.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px grey;
+    background-size: cover !important;
+}
+
+.top_front_cover{
+    background-color:rgba(0,0,128,0.3);
+    width: 100%;
+    height: 600px ;
+    color: white;
+    text-shadow:5px 5px 5px grey ;
+    padding-top: 120px;
+}
+.project{
+    width: 100%;
+    background-color: white;
+    color:#0F2061;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 7px;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: large;
+}
+p{
+    text-align: center;
+    font-size: 22px;
+    max-height: 100%;
+   
+}
+.vision{
+    width: 100%;
+    color: white;
+    background-color:#0F2061;
+    box-shadow: 5px 10px 5px grey;
+    margin-top: 7px;
+}
+.sign-in{
+    background-image: url("pics/pic6.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px grey;
+    height: 600px;
+    margin-top: 7px;
+}
+.login{
+    height: 420px;
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: rgba(0,0,128,0.3);
+}
+ #user,#password{
+    font-size: 15px;
+    border-bottom:3px solid white;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: transparent;
+    color:whitesmoke;
+    padding:10px 10px 10px 10px
+    !important; 
+}
+#user{
+    margin-top:5px;
+    /* margin-left: 30px; */
+     /* margin-right: 30px !important; */
+    margin-left: 40px !important;
+    
+}
+#password{
+    margin-top: 5px ;
+     margin-left: 40px !important;
+     /* margin-left: 30px;
+     margin-right: 30px; */
+}
+ #username,#pass{
+    color: whitesmoke;
+    padding-left: 45px;
+    padding-top: 20px;
+    font-size: 20px !important; 
+
+}
+#button{
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    background-color: #0F2061;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border:none;
+    color: whitesmoke;
+    border: 3PX solid #0F2061;
+    border-radius: 10px !important;
+}
+.contact{
+    height: 550px;
+    color: #0F2061;
+    box-shadow: 5px 5px 5px grey;
+}
+.contact-info{
+    text-align: center;
+    padding:7px 7px 7px 7px !important;
+    font-size:22px ;
+    list-style: none;
+    text-align: center;
+}
+a{
+    margin-bottom: 50px;
+}
+.TOP{
+    height:70px;
+    font-size: 25px;
+    background-color: #0F2061;
+    margin-top: 7px;
+    padding-top: 20px;
+    text-align: center;
+    color: whitesmoke !important;
+}
+#top{
+    margin-left: 20px;
+    color: whitesmoke;
+}
+#left{
+    text-align: right;
+    font-size: 18px;
+}
+@media only screen and (max-width: 400px) {
+    .nav-item{
+        font-size: 12px;
+        padding-inline-end: 5px;
+        
+      
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .nav-item{
+        font-size: 10px;
+        padding-inline-end: 3px;
+        
+      
+    }
+    .mainBar{
+        height:50px;}
+  }
+  @media only screen and (max-width: 346px) {
+    .nav-item{
+        font-size: 11px;
+        padding-inline-end: 3px;
+        
+      
+    }
+    .mainBar{
+        height:50px;}
+  }
+  @media only screen and (max-width: 380px) {
+    #user,#password{
+        width: 200px;}
+
+        
+      
+    }

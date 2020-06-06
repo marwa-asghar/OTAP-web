@@ -1,0 +1,79 @@
+
+.mainBar{
+    height:85px;
+    box-shadow: 5px 5px 5px grey;
+    background-color:#0F2061;
+    padding-top: 15px;
+    margin-top: 5px;
+    background-blend-mode: exclusion;
+    text-align: center;
+    padding-bottom:10px ;
+}
+.nav-item{
+    font-size: 21px;
+    padding-inline-end: 15px;
+    text-decoration:none ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15PX;
+    color: white
+    !important;
+}
+.upload{
+    background-image: url("pics/pic4");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+   box-shadow: 5px 5px 5px grey;
+   padding-top: 20px;
+}
+#upload-form{
+    margin-top: 90px;
+    background-color: rgba(0,0,128,0.3);
+    height: 350px;
+    box-shadow: 5px 5px 5px gray;
+}
+#update{
+margin-top: 100px;
+/* margin-left: 50px; */
+margin-left: 5%;
+border: white 2px solid;
+background-color: transparent;
+color: whitesmoke;
+padding: 7px 7px 7px 7px;
+}
+#submit{
+margin-top: 20px;
+/* margin-left: 50px; */
+margin-left: 5%;
+}
+#prg{
+    margin-top: 25px;
+    margin-left: 5%;
+    font-size: 20px;
+    color: whitesmoke;   
+}
+.TOP{
+    height:70px;
+    font-size: 25px;
+    background-color:whitesmoke;
+    margin-top: 7px;
+    padding-top: 20px;
+    text-align: center;
+    color: #0F2061 !important;
+}
+#top{
+    margin-left: 20px;
+    color: #0F2061;
+}
+@media only screen and (max-width: 576px) {
+    #update {
+       width: 290px;
+    }
+    .mainBar{
+        height:90px;}
+  }
+  @media only screen and (max-width: 360px) {
+    #update {
+       width: 228px;
+    }
+  }

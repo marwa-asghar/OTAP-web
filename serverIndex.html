@@ -1,0 +1,68 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>upload</title>
+      <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container-fluid mainBar">
+         <div class="row">
+             <div class="col-md-12 col-sm-12 col-lg-12 col-12 ">
+                 <!-- <a class="nav-item" href="#">BACK TO HOME</a> -->
+                 <p class="nav-item">Over The Air Programming with GSM</p>
+            </div>
+        </div>
+    </div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<div class="container-fluid upload">
+   <div class="row">
+      <div class="col-lg-4 col-md-3 col-sm-2 col-1"></div>
+      <div class="col-sm-8 col-md-6 col-lg-4 col-10" id="upload-form">
+         <form method='POST' action='#' enctype='multipart/form-data' id='upload_form'>
+            <input type='file' id="update" name='update'><br>
+                 <input type='submit'id="submit" value='Update'>
+             </form>
+             
+          <div id='prg'>progress: 0%</div></div>
+          <div  class="col-lg-4 col-md-3 col-sm-2 col-1 "></div>
+   </div>
+</div>
+<div class="container-fluid TOP">
+   <div class="row">
+       <div class="col-sm-12 col-12 col-lg-12 col-md-12"><a href="index.html" id="top" >BACK TO HOME PAGE</a></div>
+   </div>
+</div>
+ <script>
+  $('form').submit(function(e){
+  e.preventDefault();
+  var form = $('#upload_form')[0];
+  var data = new FormData(form);
+   $.ajax({
+  url: '/update',
+  type: 'POST',
+  data: data,
+  contentType: false,
+  processData:false,
+  xhr: function() {
+  var xhr = new window.XMLHttpRequest();
+  xhr.upload.addEventListener('progress', function(evt) {
+  if (evt.lengthComputable) {
+  var per = evt.loaded / evt.total;
+  $('#prg').html('progress: ' + Math.round(per*100) + '%');
+  }
+  }, false);
+  return xhr;
+  },
+  success:function(d, s) {
+  console.log('success!')
+ },
+ error: function (a, b, c) {
+ }
+ });
+ });
+ </script>
+ </body>
+ </html>
